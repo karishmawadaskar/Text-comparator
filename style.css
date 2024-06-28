@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/2.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo {
+    margin: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 120px;
+    width: 150px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #000099;
+}
+
+ul,
+li,
+a {
+    display: flex;
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+
+}
+
+.app-container {
+    border: 2px solid #000099;
+    background-color: white;
+    margin: 40px 50px;
+}
+
+.app-heading {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-right: 500px;
+}
+
+.container-heading {
+    font-size: 15px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.input-text {
+
+    height: 300px;
+    width: 500px;
+    border: 2px solid #b3b3ff;
+    box-shadow: 1px 1px 5px #b3b3ff;
+    border-radius: 5px;
+}
+
+.match-result {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn {
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: #000099;
+    ;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-container {
+    border: 2px solid #1a75ff;
+    background-color: white;
+    margin: 50px 380px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.login-heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.input-login {
+    border: 2px solid #b3b3ff;
+    height: 50px;
+    width: 400px;
+    margin: 10px 120px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.login-btn {
+    height: 50px;
+    width: 405px;
+    margin: 30px 125px 10px 125px;
+    background-color: #000099;
+    ;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-footer-link,
+a {
+    color: #1a75ff;
+    font-weight: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    color: grey;
+    text-align: center;
+    margin: 30px 300px;
+    padding: 10px;
+    word-spacing: 5px;
+
+}
