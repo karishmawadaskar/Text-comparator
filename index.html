@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="header">
+                <img src="./images/1.png" class="logo" />
+                <p class="app-heading">TEXT COMPARATOR</p>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/login.html">Login</a></li>
+                    <li><a href="./pages/signup.html">signup</a></li>
+                </ul>
+            </div>
+            <div class="text-container">
+                <div class="text-container1">
+                    <p class="container-heading">Please enter some text for comparison: </p>
+                    <textarea type="textarea" class="input-text" id="input1"></textarea>
+                </div>
+                <div class="text-container1">
+                    <p class="container-heading">Please enter some text for comparison:</p>
+                    <textarea type="textarea" class="input-text" id="input2"></textarea>
+                </div>
+            </div>
+            <p class="match-result" id="match-result-text" onclick=" comparetext()"></p>
+            <div class="button">
+                <button class="btn" id="button" onclick=" comparetext()">Comapare Text</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
