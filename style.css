@@ -5,6 +5,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    border: 2px solid #000099;
+    background-color: white;
+    margin: 40px 50px;
+}
+
 .logo {
     margin: 10px 20px;
     border: 1px solid black;
@@ -15,31 +25,45 @@ body {
 
 .header {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #000099;
 }
 
-ul,
-li,
-a {
-    display: flex;
-    color: white;
-    margin-right: 5px;
-    text-decoration: none;
-
-}
-
-.app-container {
-    border: 2px solid #000099;
-    background-color: white;
-    margin: 40px 50px;
-}
-
 .app-heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
-    margin-right: 500px;
+    margin-right: 400px;
+}
+
+.app-container ul {
+    display: flex;
+}
+
+.app-container ul li {
+    list-style: none;
+    margin-left: 7px;  
+}
+
+.app-container ul li:first-child {
+    margin-left: 0;
+}
+
+.app-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.app-container ul li a:hover {
+    background: white;
+    color: black;
 }
 
 .container-heading {
@@ -53,12 +77,15 @@ a {
 }
 
 .input-text {
-
     height: 300px;
     width: 500px;
     border: 2px solid #b3b3ff;
     box-shadow: 1px 1px 5px #b3b3ff;
     border-radius: 5px;
+}
+
+.input-text:hover {
+    border: 2px solid #000099;
 }
 
 .match-result {
@@ -74,20 +101,17 @@ a {
 }
 
 .btn {
+    border: none;
     font-size: medium;
     font-weight: bold;
     padding: 15px 40px;
     border-radius: 50px;
     background-color: #000099;
-    ;
     color: white;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.btn:hover {
+    background-color: #0000e6;
 }
 
 .login-container {
@@ -101,20 +125,17 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .login-heading {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-
 }
 
 h3 {
     text-align: center;
     font-size: 30px;
-
 }
 
 .input-login {
@@ -131,7 +152,6 @@ h3 {
     width: 405px;
     margin: 30px 125px 10px 125px;
     background-color: #000099;
-    ;
     border-radius: 5px;
     color: white;
     font-size: larger;
@@ -140,7 +160,6 @@ h3 {
 .login-footer {
     display: flex;
     justify-content: center;
-
 }
 
 .login-footer-link,
@@ -156,8 +175,270 @@ h1 {
 .content {
     color: grey;
     text-align: center;
-    margin: 30px 300px;
     padding: 10px;
     word-spacing: 5px;
-
 }
+
+@media screen and (max-width: 423px) {
+    .logo {
+        margin: 10px 10px;
+        height: 60px;
+        width: 80px;
+    }
+
+    .app-heading {
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    .input-text {
+        height: 150px;
+        width: 250px;
+    }
+
+    .app-container ul li a {
+        font-size: 12px;
+    }
+
+    .login-container {
+        margin: 50px 20px;
+    }
+
+    .input-login {
+        height: 30px;
+        width: 200px;
+    }
+
+    .login-btn {
+        height: 30px;
+        width: 210px;
+    }
+}
+
+@media screen and (min-width: 423.5px) and (max-width:660px) {
+    .app-heading {
+        margin-right: 0;
+    }
+    .logo {
+        margin: 10px 10px;
+        height: 60px;
+        width: 80px;
+    }
+
+    .app-heading {
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    .input-text {
+        height: 150px;
+        width: 250px;
+    }
+
+    .app-container ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 423.5px) and (max-width:500px) {
+    .app-heading {
+        margin-right: 0;
+    }
+    .login-container {
+        margin: 50px 40px;
+    }
+
+    .input-login {
+        height: 40px;
+        width: 250px;
+        margin: 10px 60px;
+      
+    }
+
+    .login-btn {
+        height: 40px;
+        width: 260px;
+        margin: 30px 62px 10px 62px;
+    }
+}
+    @media screen and (min-width: 500.5px) and (max-width:526px) {
+        .app-heading {
+            margin-right: 0;
+        }
+        .login-container {
+            margin: 50px 40px;
+        }
+
+        .input-login {
+            height: 50px;
+            width: 300px;
+            margin: 10px 60px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 310px;
+            margin: 30px 62px 10px 62px;
+        }
+    }
+
+    @media screen and (min-width:526.5px) and (max-width:624px) {
+        .app-heading {
+            margin-right: 0;
+        }
+        .login-container {
+            margin: 50px 40px;
+        }
+
+        .input-login {
+
+            height: 50px;
+            width: 350px;
+            margin: 10px 60px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 360px;
+            margin: 30px 62px 10px 62px;
+        }
+        .input-text {
+            height: 150px;
+            width: 300px;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 80px;
+            width: 100px;
+        }
+    
+        .app-heading {
+            font-size: 20px;
+            margin-right: 0;
+        }
+    
+    }
+    @media screen and (min-width:624.5px) and (max-width:704px){
+        .app-heading {
+            margin-right: 0;
+        }
+        .login-container {
+            margin: 50px 50px;
+        }
+
+        .input-login {
+            height: 50px;
+            width: 350px;
+            margin: 10px 120px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 360px;
+            margin: 30px 122px 10px 122px;
+        }
+        .input-text {
+            height: 150px;
+            width: 300px;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 80px;
+            width: 100px;
+        }
+    
+        .app-heading {
+            font-size: 20px;
+            margin-right: 0;
+        }
+    }
+    @media screen and (min-width:704.5px) and (max-width:904px){
+        .app-heading {
+            margin-right: 0;
+        }
+        .login-container {
+            margin: 50px 120px;
+        }
+
+        .input-login {
+            height: 50px;
+            width: 350px;
+            margin: 10px 80px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 360px;
+            margin: 30px 82px 10px 82px;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 80px;
+            width: 100px;
+        }
+    
+        .app-heading {
+            font-size: 20px;
+            margin-right:100px;
+        }
+    }
+    @media screen and (min-width:903.5px) and (max-width:1004px){
+        .app-heading {
+            margin-right: 10px;
+        }
+        .login-container {
+            margin: 50px 150px;
+        }
+
+        .input-login {
+            height: 50px;
+            width: 350px;
+            margin: 10px 130px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 360px;
+            margin: 30px 132px 10px 132px;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 80px;
+            width: 100px;
+        }
+    
+        .app-heading {
+            font-size: 20px;
+            margin-right: 100px;
+        }
+    }
+    @media screen and (min-width:1004.5px) and (max-width:1174px){
+        .app-heading {
+            margin-right: 400px;
+        }
+        .login-container {
+            margin: 50px 220px;
+        }
+
+        .input-login {
+            height: 50px;
+            width: 350px;
+            margin: 10px 160px;
+        }
+
+        .login-btn {
+            height: 50px;
+            width: 360px;
+            margin: 30px 162px 10px 162px;
+        }
+        .logo {
+            margin: 10px 10px;
+            height: 80px;
+            width: 100px;
+        }
+    
+        .app-heading {
+            font-size: 20px;
+            margin-right:200px;
+        }
+    }
