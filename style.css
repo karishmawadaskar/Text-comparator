@@ -108,6 +108,7 @@ body {
     border-radius: 50px;
     background-color: #000099;
     color: white;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -160,6 +161,7 @@ h3 {
     border-radius: 5px;
     color: white;
     font-size: larger;
+    cursor: pointer;
 }
 
 .login-footer {
